@@ -1,0 +1,16 @@
+# Ignorar a pasta .vs (configurações do Visual Studio)
+.vs
+
+# Build results
+[Bb]in
+[Oo]bj
+
+# Logs
+.log
+
+# Configurações de usuário do Visual Studio
+.user
+.suo
+
+# Diretórios temporários
+.tmp
