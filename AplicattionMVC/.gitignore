@@ -1,0 +1,38 @@
+# Pastas de configuração do Visual Studio
+.vs/
+*.suo
+*.user
+*.cache
+*.log
+*.pdb
+*.opendb
+*.ide
+
+# Resultados de build
+bin/
+obj/
+
+# Arquivos temporários de depuração e lock
+*.lock
+*.tmp
+*.temp
+*.bak
+*.swp
+*.sln.docstates
+
+# Configurações do Visual Studio Code (opcional)
+.vscode/
+
+# Configurações específicas de sistemas operacionais
+Thumbs.db
+.DS_Store
+ehthumbs.db
+desktop.ini
+
+# Arquivos gerados por pacotes ou dependências
+*.nuget
+*.nupkg
+node_modules/
+
+# Configurações de layout do Visual Studio
+**/DocumentLayout.json
