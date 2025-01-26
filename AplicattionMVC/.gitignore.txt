@@ -14,3 +14,19 @@
 
 # Diretórios temporários
 .tmp
+
+# Ignorar arquivos temporários e de configurações do Visual Studio
+.vs/
+*.user
+*.suo
+
+# Ignorar resultados de build
+bin/
+obj/
+
+# Ignorar logs e temporários
+*.log
+*.tmp
+
+# Ignorar configurações do IDE
+*.ide
