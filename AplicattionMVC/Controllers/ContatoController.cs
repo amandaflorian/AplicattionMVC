@@ -16,7 +16,7 @@ namespace AplicattionMVC.Controllers
         {
             return View();
         }
-        public IActionResult Apagar()
+        public IActionResult ApagarConfirmacao()
         {
             return View();
         }
