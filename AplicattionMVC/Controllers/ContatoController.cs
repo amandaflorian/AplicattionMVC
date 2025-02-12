@@ -25,12 +25,18 @@ namespace AplicattionMVC.Controllers
             ContatoModel contato = _contatoRepositorio.ListarPorId(id);
             return View(contato);
         }
-        public IActionResult ApagarConfirmacao()
+        public IActionResult ApagarConfirmacao(int id)
         {
-            return View();
+            ContatoModel contato = _contatoRepositorio.ListarPorId(id);
+            return View(contato);
         }
 
-
+        public IActionResult Apagar(int id)
+        {
+            _contatoRepositorio.Apagar(id);
+            return RedirectToAction("Index");
+        }
+       
         [HttpPost]
         public IActionResult Criar(ContatoModel contato)
         {
@@ -44,5 +50,6 @@ namespace AplicattionMVC.Controllers
             _contatoRepositorio.Atualizar(contato);
             return RedirectToAction("Index");
         }
+
     }
 }

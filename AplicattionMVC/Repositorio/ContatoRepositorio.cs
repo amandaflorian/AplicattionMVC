@@ -46,5 +46,21 @@ namespace AplicattionMVC.Repositorio
                 return contatoDB;
             }
         }
+
+        public bool Apagar(int id)
+        {
+            ContatoModel contatoDB = ListarPorId(id);
+            if (contatoDB == null)
+            {
+                throw new Exception("Houve um erro na atualização do contato");
+            }
+            else
+            {
+                _context.Contatos.Remove(contatoDB);
+                _context.SaveChanges();
+                return true;
+
+            }
+        }
     }
 }

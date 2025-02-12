@@ -8,5 +8,6 @@ namespace AplicattionMVC.Repositorio
         ContatoModel Atualizar(ContatoModel contato);
         List<ContatoModel> BuscarTodos();
         ContatoModel Adicionar(ContatoModel contato);
+        bool Apagar (int id);
     }
 }
